@@ -17,18 +17,19 @@
     <modules>
         <module>muses-cloud-api</module>
         <module>muses-web</module>
+        <module>muses-eureka</module>
     </modules>
 
     <!-- 设定团队发布仓库 -->
     <distributionManagement>
         <repository>
-            <id>muses-aliyun</id>
+            <id>muses-release</id>
             <name>Muses Aliyun Release Repository</name>
             <url>https://packages.aliyun.com/66a36636953179b1ec5f3c9b/maven/muses-release</url>
         </repository>
 
         <snapshotRepository>
-            <id>muses-aliyun</id>
+            <id>muses-snapshot</id>
             <name>Muses Aliyun Snapshot Repository</name>
             <url>https://packages.aliyun.com/66a36636953179b1ec5f3c9b/maven/muses-snapshot</url>
         </snapshotRepository>
@@ -69,6 +70,14 @@
                 <groupId>xyz.muses.api</groupId>
                 <artifactId>muses-api</artifactId>
                 <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Hoxton.SR9</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
 
             <!-- dubbo -->
