@@ -7,9 +7,9 @@
         <version>2.2.13.RELEASE</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>cn.muses</groupId>
+    <groupId>xyz.muses</groupId>
     <artifactId>muses-cloud</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>muses-cloud</name>
     <description>The spring cloud template!</description>
@@ -22,13 +22,13 @@
     <!-- 设定团队发布仓库 -->
     <distributionManagement>
         <repository>
-            <id>muses-release</id>
+            <id>muses-aliyun</id>
             <name>Muses Aliyun Release Repository</name>
             <url>https://packages.aliyun.com/66a36636953179b1ec5f3c9b/maven/muses-release</url>
         </repository>
 
         <snapshotRepository>
-            <id>muses-snapshot</id>
+            <id>muses-aliyun</id>
             <name>Muses Aliyun Snapshot Repository</name>
             <url>https://packages.aliyun.com/66a36636953179b1ec5f3c9b/maven/muses-snapshot</url>
         </snapshotRepository>
@@ -39,7 +39,7 @@
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <muses.version>1.0.1</muses.version>
-        <muses-cloud-api.version>0.0.1-SNAPSHOT</muses-cloud-api.version>
+        <muses-cloud-api.version>1.0.0-SNAPSHOT</muses-cloud-api.version>
         <spring-boot-druid-starter.version>1.1.10</spring-boot-druid-starter.version>
         <druid.version>1.1.14</druid.version>
         <mybatis-starter.version>2.0.0</mybatis-starter.version>
@@ -66,9 +66,9 @@
                 <scope>import</scope>
             </dependency>
             <dependency>
-                <groupId>cn.muses</groupId>
-                <artifactId>muses-cloud-api</artifactId>
-                <version>${muses-cloud-api.version}</version>
+                <groupId>xyz.muses.api</groupId>
+                <artifactId>muses-api</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
             </dependency>
 
             <!-- dubbo -->

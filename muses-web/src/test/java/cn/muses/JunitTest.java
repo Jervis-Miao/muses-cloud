@@ -2,7 +2,7 @@
  * Copyright 2022 All rights reserved.
  */
 
-package cn.muses;
+package xyz.muses;
 
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.boot.test.context.SpringBootTest;

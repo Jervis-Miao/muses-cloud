@@ -2,7 +2,7 @@
  * Copyright 2019 All rights reserved.
  */
 
-package cn.muses;
+package xyz.muses;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Value;

@@ -3,8 +3,8 @@
 
     <contextName>muses</contextName>
 
-    <define name="log.path" class="cn.muses.config.logback.LogPathPropertyDefiner"/>
-    <define name="log.isRolling" class="cn.muses.config.logback.LogRollingPropertyDefiner"/>
+    <define name="log.path" class="xyz.muses.config.logback.LogPathPropertyDefiner"/>
+    <define name="log.isRolling" class="xyz.muses.config.logback.LogRollingPropertyDefiner"/>
 
     <appender name="ALIBABA-APPENDER" class="ch.qos.logback.core.FileAppender">
         <file>${log.path}/muses.alibaba.log</file>
@@ -72,7 +72,7 @@
     <logger name="org.springframework" level="INFO" additivity="TRUE">
         <appender-ref ref="SPRING-APPENDER"/>
     </logger>
-    <logger name="cn.muses" level="INFO" additivity="FALSE">
+    <logger name="xyz.muses" level="INFO" additivity="FALSE">
         <appender-ref ref="CONSOLE-APPENDER"/>
         <appender-ref ref="APP-APPENDER"/>
     </logger>
